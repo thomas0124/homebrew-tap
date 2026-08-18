@@ -11,7 +11,7 @@ class Ralph < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/thomas0124/ralph/releases/download/v0.4.0/ralph_darwin_amd64.tar.gz"
-      sha256 "f58e6ede68c40286f4ab61afbb43d8d67f0172c2866163d97ab9fbf6478844f9"
+      sha256 "2b9d5bee3174f6760a007eb600acbd9e074ad0a3f418709b0b4d788be3d66a8d"
 
       define_method(:install) do
         bin.install "ralph"
@@ -19,7 +19,7 @@ class Ralph < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/thomas0124/ralph/releases/download/v0.4.0/ralph_darwin_arm64.tar.gz"
-      sha256 "ccfdd7f831988b8bdda0c8bb719d34a32c5660eb4571daf8681fb220083fff88"
+      sha256 "41664d3ed63ff625bfde46422c751e9519e0ada9b11fa5d6b50549499141d37f"
 
       define_method(:install) do
         bin.install "ralph"
@@ -30,14 +30,14 @@ class Ralph < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/thomas0124/ralph/releases/download/v0.4.0/ralph_linux_amd64.tar.gz"
-      sha256 "86b71229fd29312ba88edd030e7216d3aeb9494a104540df1d6ad6bf7534ade7"
+      sha256 "c82cdbb67dba0181034af9efa929aaf36b6d3250a85b71b4f7c16f63955cb4f0"
       define_method(:install) do
         bin.install "ralph"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/thomas0124/ralph/releases/download/v0.4.0/ralph_linux_arm64.tar.gz"
-      sha256 "53d4ef1c96d27bea7c57c5651caaf58c2c1746a6a6878b1cf6eca8f34b23dcd0"
+      sha256 "805f577be1add0fec6e9c25bbd03517a18d6e17e6d08bd26a3d2f614e699db00"
       define_method(:install) do
         bin.install "ralph"
       end
